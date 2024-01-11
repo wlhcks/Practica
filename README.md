@@ -1,2 +1,2 @@
 # Practica
- Repositorio pra practica
+ Repositorio para practica
