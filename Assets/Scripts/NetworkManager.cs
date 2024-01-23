@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NetworkManager : MonoBehaviour
 {
+    public int mapId;
+    private string mapName;
     // Start is called before the first frame update
     void Start()
     {
