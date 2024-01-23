@@ -9,11 +9,10 @@ public class NetworkManager : MonoBehaviour
 
     public int mapId;
     private string mapName;
-
     public string user;
     public string password;
-
-
+    public string Alias;
+    public string ErrorMessage;
     // Start is called before the first frame update
     void Start()
     {
