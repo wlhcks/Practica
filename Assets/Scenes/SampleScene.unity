@@ -302,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbe22b5e1e5f55d40b7eed482b4ed47d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  YepaQuePasaGenteSoyLolito: 
   moveSpeed: 10
   minXRot: -85
   maxXRot: -10

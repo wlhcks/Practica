@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour
 {
+    public string YepaQuePasaGenteSoyLolito;
     public float moveSpeed;
     [Header("Rotate config")]
     public float minXRot;
