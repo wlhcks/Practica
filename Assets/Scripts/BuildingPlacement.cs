@@ -64,7 +64,7 @@ public class BuildingPlacement : MonoBehaviour
             }
             else if (currentlyBulldozering && ExistingBuilding != null)
             {
-                   City.Instance.OnRemoveBuilding(ExistingBuilding);
+                City.Instance.OnRemoveBuilding(ExistingBuilding);
             }
         }
     }
@@ -76,7 +76,8 @@ public class BuildingPlacement : MonoBehaviour
     public void BeginNewBuildingPlacement (BuildingPreset preset)
     {
         //TODO make sure we have enough money
-        if (!currentlyBulldozering) { 
+            currentlyBulldozering = false;
+            bulldozerIndicator.SetActive(false);
             currentlyPlacing = true;
             curBuildingPreset = preset;
             placementIndicator.GetComponentInChildren<MeshFilter>().mesh = preset.prefab.GetComponentInChildren<MeshFilter>().sharedMesh;
@@ -84,7 +85,7 @@ public class BuildingPlacement : MonoBehaviour
             placementIndicator.SetActive (true);            
 
             placementIndicator.transform.position = new Vector3(0, -99, 0);
-        }
+        
     }    
 
     void CancelPlacement()
@@ -101,11 +102,12 @@ public class BuildingPlacement : MonoBehaviour
 
     public void BeginNewBulldozer()
     {
-        if (!currentlyPlacing) { 
+            currentlyPlacing = false;
+            placementIndicator.SetActive(false);
             currentlyBulldozering = true;
             bulldozerIndicator.SetActive (true);
             bulldozerIndicator.transform.position  = new Vector3(0, -99, 0);
-        }
+        
     }
 
     private void Update()
