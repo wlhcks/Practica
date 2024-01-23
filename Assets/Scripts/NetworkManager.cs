@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NetworkManager : MonoBehaviour
 {
+    public string Alias;
+    public string ErrorMessage;
     // Start is called before the first frame update
     void Start()
     {
