@@ -14,6 +14,7 @@ public class City : MonoBehaviour
     public float speedFactor = 1;
     private float speedFactor_temp;
     public float skyboxTimeFactor;
+    public float NPCSpawnRate;
 
     public TextMeshProUGUI timeText;
 

@@ -3434,6 +3434,7 @@ MonoBehaviour:
   curDayTime: 0
   speedFactor: 5
   skyboxTimeFactor: 2
+  NPCSpawnRate: 15
   timeText: {fileID: 103772097}
   sun: {fileID: 705507993}
   money: 270
