@@ -13,6 +13,7 @@ public class City : MonoBehaviour
     private float minutes;
     public float speedFactor = 1;
     private float speedFactor_temp;
+    public float skyboxTimeFactor;
 
     public TextMeshProUGUI timeText;
 
@@ -79,7 +80,7 @@ public class City : MonoBehaviour
         sun.transform.rotation = Quaternion.Euler(((curDayTime - 6) / dayTime) * 360, 0f, 0f);
 
         //Move the skybox with the current time
-        RenderSettings.skybox.SetFloat("_Rotation", Time.time * 2);
+        RenderSettings.skybox.SetFloat("_Rotation", Time.time * skyboxTimeFactor );
 
     }
 
