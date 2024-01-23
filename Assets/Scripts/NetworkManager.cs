@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NetworkManager : MonoBehaviour
 {
+    public int mapId;
+    private string mapName;
     public string user;
     public string password;
     public string Alias;
